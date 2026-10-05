@@ -1,31 +1,31 @@
 .progress-card {
-    margin-bottom: 16px
+    margin-bottom: 16px;
 }
 
 .upload-box {
-    border: 2px dashed #d8dbea;
+    border: 2px dashed #A8DCCF;
     border-radius: 14px;
     padding: 22px;
     text-align: center;
-    background: #69ac9b
+    background: #E4F4EF;
 }
 
 .status-approved {
-    color: #128251
+    color: #4E9B6D;
 }
 
 .status-rejected {
-    color: #c53c31
+    color: #E7796F;
 }
 
 .status-pending {
-    color: #ffde0a
+    color: #D4A94E;
 }
 
 .achievement {
     display: flex;
     gap: 16px;
-    align-items: center
+    align-items: center;
 }
 
 .achievement .icon {
@@ -34,11 +34,11 @@
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background: #fff5cc;
-    font-size: 28px
+    background: #FFF2D2;
+    font-size: 28px;
 }
 
 .locked {
     filter: grayscale(1);
-    opacity: .55
+    opacity: .55;
 }

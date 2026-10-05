@@ -1,18 +1,19 @@
-
 .layout {
     display: grid;
     grid-template-columns: 240px 1fr;
-    min-height: 100vh
+    min-height: 100vh;
 }
 
 .sidebar {
-    background: #202442;
-    color: #f1edbb;
-    padding: 24px 16px
+    background: #FFFFFF;
+    color: #31564D;
+    padding: 24px 16px;
+    border-right: 1px solid #E7ECE8;
 }
 
 .sidebar h2 {
-    margin: 0 12px 28px
+    margin: 0 12px 28px;
+    color: #31564D;
 }
 
 .nav a {
@@ -20,18 +21,20 @@
     padding: 12px 14px;
     margin: 6px 0;
     border-radius: 10px;
-    color: #ebebeb
+    color: #70857F;
+    text-decoration: none;
+    transition: 0.2s ease;
 }
 
 .nav a:hover,
 .nav a.active {
-    background: #b8b5cb;
-    color: #fff
+    background: #E4F4EF;
+    color: #3D9D8F;
 }
 
 .main {
     padding: 28px;
-    background-color: #e1deb9;
+    background-color: #FAFAF5;
     min-height: 100vh;
 }
 
@@ -39,114 +42,98 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px
+    margin-bottom: 24px;
 }
 
-.stat h3 {
-    font-size: 30px;
-    margin: 6px 0
-}
 .stat {
-    background: #77a455;
-    border: 1px solid #68b777;
+    background: #FFFFFF;
+    border: 1px solid #E7ECE8;
     border-radius: 15px;
     padding: 20px;
 }
 
-
-.stat p {
-    color: #ce5022;
-}
-
-/* Angka statistik */
 .stat h3 {
     font-size: 30px;
     margin: 6px 0;
-    color: #581c87;
+    color: #31564D;
+}
+
+.stat p {
+    color: #70857F;
+    margin: 0;
 }
 
 .welcome {
-    background: linear-gradient(120deg, #d166ce, #a44dbe);
-    color: #f7f5f5
+    background: linear-gradient(120deg, #58B8A9, #A8DCCF);
+    color: #31564D;
+    border-radius: 18px;
 }
 
-.challenge-mini {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    align-items: center;
-    border-bottom: 1px solid var(--border);
-    padding: 12px 0
-}
-
-@media(max-width:800px) {
-    .layout {
-        grid-template-columns: 1fr
-    }
-
-    /* ============================= */
-/* CHALLENGE TERBARU */
-/* ============================= */
-
-/* Kotak utama Challenge Terbaru */
 .challenge-list {
-    background: #649d60;
-    border: 1px solid #9c409c;
+    background: #FFFFFF;
+    border: 1px solid #E7ECE8;
     border-radius: 16px;
     padding: 20px;
 }
 
-/* Judul Challenge Terbaru */
 .challenge-list h2 {
-    color: #202442;
+    color: #31564D;
 }
 
-/* Setiap challenge */
 .challenge-mini {
     display: flex;
     justify-content: space-between;
     gap: 12px;
     align-items: center;
-    border-bottom: 1px solid #d8b4d8;
+    border-bottom: 1px solid #E7ECE8;
     padding: 14px 0;
 }
 
-/* Nama challenge */
+.challenge-mini:last-child {
+    border-bottom: none;
+}
+
 .challenge-mini strong {
-    color: #202442;
+    color: #31564D;
 }
 
-/* Kategori dan poin */
 .challenge-mini p {
-    color: #716b86;
+    color: #70857F;
 }
 
-/* Tombol Lihat */
 .challenge-mini .btn {
-    background: #d166ce;
-    color: #ffffff;
+    background: #58B8A9;
+    color: #FFFFFF;
     border: none;
+    border-radius: 10px;
+    padding: 9px 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
 
-/* Saat tombol disentuh mouse */
 .challenge-mini .btn:hover {
-    background: #a44dbe;
+    background: #3D9D8F;
 }
+
+@media (max-width: 800px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
 
     .sidebar {
-        position: static
+        position: static;
     }
 
     .nav {
         display: flex;
-        overflow: auto
+        overflow: auto;
     }
 
     .nav a {
-        white-space: nowrap
+        white-space: nowrap;
     }
 
     .main {
-        padding: 16px
+        padding: 16px;
     }
 }

@@ -1,37 +1,37 @@
 .challenge-card h3 {
-    margin: 12px 0 8px
+    margin: 12px 0 8px;
 }
 
 .challenge-card {
-    position: relative
+    position: relative;
 }
 
 .challenge-icon {
     height: 110px;
     border-radius: 14px;
-    background: linear-gradient(135deg, #eae6ff, #d9f4ff);
+    background: linear-gradient(135deg, #E4F4EF, #DDF1EA);
     display: grid;
     place-items: center;
-    font-size: 42px
+    font-size: 42px;
 }
 
 .filters {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    margin: 18px 0
+    margin: 18px 0;
 }
 
 .detail-hero {
     padding: 28px;
-    background: linear-gradient(120deg, #da60e7, #c55dda);
-    color: #fff;
-    border-radius: 18px
+    background: linear-gradient(120deg, #58B8A9, #A8DCCF);
+    color: #31564D;
+    border-radius: 18px;
 }
 
 .detail-meta {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    margin: 14px 0
+    margin: 14px 0;
 }
