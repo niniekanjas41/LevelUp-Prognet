@@ -1,0 +1,44 @@
+.progress-card {
+    margin-bottom: 16px
+}
+
+.upload-box {
+    border: 2px dashed #d8dbea;
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+    background: #69ac9b
+}
+
+.status-approved {
+    color: #128251
+}
+
+.status-rejected {
+    color: #c53c31
+}
+
+.status-pending {
+    color: #ffde0a
+}
+
+.achievement {
+    display: flex;
+    gap: 16px;
+    align-items: center
+}
+
+.achievement .icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #fff5cc;
+    font-size: 28px
+}
+
+.locked {
+    filter: grayscale(1);
+    opacity: .55
+}

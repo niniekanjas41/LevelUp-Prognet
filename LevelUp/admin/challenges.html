@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CRUD Challenge | LevelUp</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>⚡ LevelUp <span class="badge admin-tag">Admin</span></h2>
+            <nav class="nav"><a href="dashboard.html">Dashboard</a><a href="challenges.html">Kelola Challenge</a><a
+                    href="submissions.html">Submissions</a><a href="#" onclick="logout()">Logout</a></nav>
+        </aside>
+        <main class="main">
+            <div class="topbar">
+                <div>
+                    <h1>Kelola Challenge</h1>
+                    <p class="muted">Tambah, ubah, dan hapus challenge.</p>
+                </div><button class="btn btn-primary" onclick="openModal()">+ Tambah Challenge</button>
+            </div>
+            <div class="card table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Judul</th>
+                            <th>Kategori</th>
+                            <th>Poin</th>
+                            <th>Kesulitan</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="challengeRows"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-box">
+            <h2>Form Challenge</h2>
+            <form id="challengeForm">
+                <div class="form-group"><label>Judul</label><input id="title" class="form-control" required></div>
+                <div class="grid" style="grid-template-columns:1fr 1fr">
+                    <div class="form-group"><label>Kategori</label><select id="category" class="form-control">
+                            <option>Produktivitas</option>
+                            <option>Kesehatan</option>
+                            <option>Edukasi</option>
+                            <option>Gaya Hidup</option>
+                        </select></div>
+                    <div class="form-group"><label>Kesulitan</label><select id="difficulty" class="form-control">
+                            <option>Mudah</option>
+                            <option>Sedang</option>
+                            <option>Sulit</option>
+                        </select></div>
+                </div>
+                <div class="grid" style="grid-template-columns:1fr 1fr">
+                    <div class="form-group"><label>Poin</label><input id="points" class="form-control" type="number"
+                            min="1" required></div>
+                    <div class="form-group"><label>Durasi</label><input id="duration" class="form-control"
+                            placeholder="1 hari" required></div>
+                </div>
+                <div class="form-group"><label>Deskripsi</label><textarea id="description" class="form-control"
+                        required></textarea></div>
+                <div class="actions"><button class="btn btn-primary">Simpan</button><button type="button"
+                        class="btn btn-light" onclick="closeModal()">Batal</button></div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/auth.js"></script>
+    <script src="../js/admin/challenges.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.admin-tag {
+    background: #ffe8e5;
+    color: #c33b30
+}
+
+.actions {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: #0007;
+    display: none;
+    place-items: center;
+    padding: 20px
+}
+
+.modal.show {
+    display: grid
+}
+
+.modal-box {
+    width: min(560px, 100%);
+    background: #fff;
+    border-radius: 16px;
+    padding: 22px
+}

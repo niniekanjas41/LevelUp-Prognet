@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admin Dashboard | LevelUp</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>⚡ LevelUp <span class="badge admin-tag">Admin</span></h2>
+            <nav class="nav"><a href="dashboard.html">Dashboard</a><a href="challenges.html">Kelola Challenge</a><a
+                    href="submissions.html">Submissions</a><a href="#" onclick="logout()">Logout</a></nav>
+        </aside>
+        <main class="main">
+            <h1>Dashboard Admin</h1>
+            <p class="muted">Ringkasan aktivitas platform LevelUp.</p>
+            <div class="grid grid-4">
+                <div class="card stat"><span>Challenge</span>
+                    <h3 id="challengeCount">0</h3>
+                </div>
+                <div class="card stat"><span>User</span>
+                    <h3 id="userCount">0</h3>
+                </div>
+                <div class="card stat"><span>Menunggu Verifikasi</span>
+                    <h3 id="pendingCount">0</h3>
+                </div>
+                <div class="card stat"><span>Disetujui</span>
+                    <h3 id="approvedCount">0</h3>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/auth.js"></script>
+    <script src="../js/admin/dashboard.js"></script>
+</body>
+
+</html>

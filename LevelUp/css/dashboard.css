@@ -1,0 +1,152 @@
+
+.layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 100vh
+}
+
+.sidebar {
+    background: #202442;
+    color: #f1edbb;
+    padding: 24px 16px
+}
+
+.sidebar h2 {
+    margin: 0 12px 28px
+}
+
+.nav a {
+    display: block;
+    padding: 12px 14px;
+    margin: 6px 0;
+    border-radius: 10px;
+    color: #ebebeb
+}
+
+.nav a:hover,
+.nav a.active {
+    background: #b8b5cb;
+    color: #fff
+}
+
+.main {
+    padding: 28px;
+    background-color: #e1deb9;
+    min-height: 100vh;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px
+}
+
+.stat h3 {
+    font-size: 30px;
+    margin: 6px 0
+}
+.stat {
+    background: #77a455;
+    border: 1px solid #68b777;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+
+.stat p {
+    color: #ce5022;
+}
+
+/* Angka statistik */
+.stat h3 {
+    font-size: 30px;
+    margin: 6px 0;
+    color: #581c87;
+}
+
+.welcome {
+    background: linear-gradient(120deg, #d166ce, #a44dbe);
+    color: #f7f5f5
+}
+
+.challenge-mini {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0
+}
+
+@media(max-width:800px) {
+    .layout {
+        grid-template-columns: 1fr
+    }
+
+    /* ============================= */
+/* CHALLENGE TERBARU */
+/* ============================= */
+
+/* Kotak utama Challenge Terbaru */
+.challenge-list {
+    background: #649d60;
+    border: 1px solid #9c409c;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+/* Judul Challenge Terbaru */
+.challenge-list h2 {
+    color: #202442;
+}
+
+/* Setiap challenge */
+.challenge-mini {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    border-bottom: 1px solid #d8b4d8;
+    padding: 14px 0;
+}
+
+/* Nama challenge */
+.challenge-mini strong {
+    color: #202442;
+}
+
+/* Kategori dan poin */
+.challenge-mini p {
+    color: #716b86;
+}
+
+/* Tombol Lihat */
+.challenge-mini .btn {
+    background: #d166ce;
+    color: #ffffff;
+    border: none;
+}
+
+/* Saat tombol disentuh mouse */
+.challenge-mini .btn:hover {
+    background: #a44dbe;
+}
+
+    .sidebar {
+        position: static
+    }
+
+    .nav {
+        display: flex;
+        overflow: auto
+    }
+
+    .nav a {
+        white-space: nowrap
+    }
+
+    .main {
+        padding: 16px
+    }
+}
