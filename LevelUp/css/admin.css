@@ -1,30 +1,31 @@
 .admin-tag {
-    background: #ffe8e5;
-    color: #c33b30
+    background: #FCE8E1;
+    color: #E7796F;
 }
 
 .actions {
     display: flex;
     gap: 7px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .modal {
     position: fixed;
     inset: 0;
-    background: #0007;
+    background: rgba(49, 86, 77, 0.45);
     display: none;
     place-items: center;
-    padding: 20px
+    padding: 20px;
 }
 
 .modal.show {
-    display: grid
+    display: grid;
 }
 
 .modal-box {
     width: min(560px, 100%);
-    background: #fff;
+    background: #FFFFFF;
     border-radius: 16px;
-    padding: 22px
+    padding: 22px;
+    border: 1px solid #E7ECE8;
 }
